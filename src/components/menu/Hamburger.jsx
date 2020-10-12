@@ -9,12 +9,12 @@ const StyleBurger = styled.div`
     top: 15px;
     z-index: 20;
     display: none;
+    cursor:pointer;
     @media (max-width: 768px) {
         display: flex;
         justify-content: space-around;
         flex-flow: column nowrap;
     }
-
     .bar {
         width: 2rem;
         height: 0.25rem;
@@ -38,7 +38,7 @@ const StyleBurger = styled.div`
 
 const Hamburger = () =>{
 
-    const [open, setOpen] = useState(false)
+    const [open, setOpen] = useState(false) 
 
     return(
         <>

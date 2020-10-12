@@ -1,5 +1,5 @@
 import React from 'react';
-import "../../style/navbar.scss";
+import "../../style/components/navbar.scss";
 import Hamburger from './Hamburger.jsx';
 
 const Navbar = () =>{

@@ -1,5 +1,9 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import styled from 'styled-components';
+import {faChevronDown} from '@fortawesome/free-solid-svg-icons';
+import { useState } from 'react';
+import SubMenu from './SubMenu';
 
 const Ul = styled.ul`
   list-style: none;
@@ -23,19 +27,27 @@ const Ul = styled.ul`
     .item {
       color: #fff;
       cursor:pointer;
-      &:hover{
-        color:grey;
-      }
     }
+  }
+  button{
+    margin-left:10px;
   }
 `;
 
 const LeftNav = ({ open }) =>{
+
+  const [dropdown, setDropdown] = useState(false);
+
     return(
         <Ul className="list-menu" open={open}>    
-            <li className="item">Acerca de nosotros</li>
-            <li className="item">Nuestra misión</li>
-            <li className="item">¿Qué es la Criónica?</li>
+            <li className="item down">¿Qué es la Criónica?
+              <button onClick={ () => setDropdown(!dropdown) }>
+                <FontAwesomeIcon icon={faChevronDown}/>
+              </button>
+              {dropdown && <SubMenu/>}
+            </li>
+            <li className="item">Quienes Somos</li>
+            <li className="item">Noticias</li>
             <li className="item">Contacto</li>
         </Ul>
     )
