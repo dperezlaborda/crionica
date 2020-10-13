@@ -1,0 +1,27 @@
+@import "../common/variables";
+
+.bio-container{
+    background-color: #9FB0BF;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-family: $txt;
+    line-height: 25px;
+    margin-bottom: 40px;
+    padding: 18px;
+    .bio-image{
+        width: 8em;
+        height: 8em;
+        border-radius: 50%;
+        max-width: 100%;
+    }
+    .bio-title{
+        font-size: 23px;
+        font-weight: 200;
+        margin:10px 0 15px;
+        color:#152126;
+    }
+    .bio-txt{
+        color:#4C6873;
+        font-size: 16px;
+    }
+}

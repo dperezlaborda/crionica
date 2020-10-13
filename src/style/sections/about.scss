@@ -3,20 +3,20 @@
 .about-container{
     background-color: #F5F6F8;
     box-sizing: border-box;
-    padding: 40px 15px;
     font-family: $txt;
+    padding: 40px 15px;
     text-align: center;
-
     .about-title{
-        font-weight: 200;
         font-size: 30px;
+        font-weight: 200;
         margin: 0 0 20px 0;
+        color: #152126;
     }
     .about-sub{
-        font-weight: 200;
-        padding-bottom: 50px;
-        margin: 0;
-        font-size: 15px;
         color: #4C6873;
+        font-size: 15px;
+        font-weight: 200;
+        margin: 0;
+        padding-bottom: 50px;
     }
 }

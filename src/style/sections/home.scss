@@ -7,24 +7,24 @@
         background-size: cover;
         box-sizing: border-box;
         height: 450px;
-        width: 100%;
         position: relative;
+        width: 100%;
         .text-container{
+            align-items: center;
+            box-sizing: border-box;
+            color:#EBEFF2;
+            display: flex;
+            font-family:$txt;
+            flex-direction: column;
             margin-top: 15px;
             padding: 10px;
-            box-sizing: border-box;
             position: absolute;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            color:#EBEFF2;
-            font-family:$txt;
             top:0;
             .main-title{
                 font-size: 23px;
-                text-transform: uppercase;
                 margin: 0;
                 padding: 30px;
+                text-transform: uppercase;
             }
             span{
                 border: 1px solid #EBEFF2;
@@ -32,16 +32,16 @@
             }
             .title{
                 font-size: 15px;
+                font-weight: 200;
+                line-height: 30px;
+                margin: 0;
+                padding: 20px;
                 text-align: center;
                 width: 50%;
-                font-weight: 200;
-                padding: 20px;
-                margin: 0;
-                line-height: 30px;
             }
             .text{
-                margin:0;
                 font-style: italic;
+                margin:0;
                 padding-top: 25px;
             }
         }
