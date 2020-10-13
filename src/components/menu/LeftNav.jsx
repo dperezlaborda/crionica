@@ -1,8 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
-import {faChevronDown} from '@fortawesome/free-solid-svg-icons';
-import { useState } from 'react';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import SubMenu from './SubMenu';
 
 const Ul = styled.ul`
@@ -10,12 +9,13 @@ const Ul = styled.ul`
   display: flex;
   flex-flow: row nowrap;
   margin:0;
+  box-sizing:border-box;
   .item {
     padding: 18px 10px;
   }
   @media (max-width: 768px) {
     flex-flow: column nowrap;
-    background-color: #0D2538;
+    background-color: #152126;
     position: fixed;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
     top: 0;
@@ -25,12 +25,28 @@ const Ul = styled.ul`
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
     .item {
-      color: #fff;
+      color: #EBEFF2;
       cursor:pointer;
+      &:hover{
+        color: #909CA6;
+      }
     }
   }
   button{
     margin-left:10px;
+    background:none;
+    border:none;
+    cursor:pointer;
+    outline: inherit;
+    svg{
+      color:#fff;
+      padding:3px;
+      border-radius:50%;
+      background-color:none;
+      &:hover{
+         background-color:#909CA6;
+      }
+    }
   }
 `;
 
@@ -40,7 +56,7 @@ const LeftNav = ({ open }) =>{
 
     return(
         <Ul className="list-menu" open={open}>    
-            <li className="item down">¿Qué es la Criónica?
+            <li className="item">¿Qué es la Criónica?
               <button onClick={ () => setDropdown(!dropdown) }>
                 <FontAwesomeIcon icon={faChevronDown}/>
               </button>

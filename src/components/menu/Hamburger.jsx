@@ -18,7 +18,7 @@ const StyleBurger = styled.div`
     .bar {
         width: 2rem;
         height: 0.25rem;
-        background-color: ${({ open }) => open ? '#ccc' : '#333'};
+        background-color:#EBEFF2;
         border-radius: 10px;
         transform-origin: 1px;
         transition: all 0.3s linear;

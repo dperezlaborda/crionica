@@ -1,0 +1,32 @@
+@import "../common/variables";
+
+#card-container{
+    background-color: #F5F6F8;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    padding: 20px;
+    margin: 0 10px 40px 10px;
+    font-family:$txt;
+    border-radius: 3px;
+    transition: transform 0.75s;
+    .card-title{
+        font-size: 20px;
+        font-weight: 100;
+        margin: 0;
+        text-align: start;
+        display: flex;
+        justify-content: space-between;
+    }
+    .icon{
+        background: none;
+        border: none;
+        cursor: pointer;
+        outline: inherit;
+        &:hover{
+            color: #4C6873;
+        }
+    }
+    &:hover{
+        transform: translate(0, -5px);
+    }
+}
+

@@ -1,0 +1,26 @@
+@import "../common/variables";
+
+#intro-container{
+    background-color: #E3E8EE;
+    padding: 60px 15px;
+    font-family: $txt;
+    z-index: 2;
+    box-shadow: inset 0 0 12px 0 rgba(0, 0, 0, 0.1);
+    .intro-title{
+        text-align: center;
+        margin: 0 0 20px 0;
+        font-size: 30px;
+        padding: 0;
+        font-weight: 200;
+        color: #152126;
+    }
+    .intro-text{
+        font-size: 15px;
+        color: #4C6873;
+        margin: 0;
+    }
+    .sub{
+        text-align: center;
+        padding-bottom: 50px;
+    }
+}
