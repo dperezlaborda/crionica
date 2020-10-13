@@ -4,7 +4,7 @@
     background-color: #F5F6F8;
     box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
     padding: 20px;
-    margin: 0 10px 40px 10px;
+    margin: 0 10px 20px 10px;
     font-family:$txt;
     border-radius: 3px;
     transition: transform 0.75s;
@@ -15,6 +15,10 @@
         text-align: start;
         display: flex;
         justify-content: space-between;
+        cursor: pointer;
+        &:hover{
+            color:#4C6873;
+        }
     }
     .icon{
         background: none;
@@ -27,6 +31,9 @@
     }
     &:hover{
         transform: translate(0, -5px);
+    }
+    .card-text{
+        font-size: 15px;
     }
 }
 
