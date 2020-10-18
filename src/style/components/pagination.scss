@@ -2,7 +2,8 @@
     color:#4C6873;
     .number{
         cursor: pointer;
-        padding: 20px;
+        padding: 5px 20px;
+        border-left: 1px solid #4C6873;
         &:hover{
             color:#152126; 
         }

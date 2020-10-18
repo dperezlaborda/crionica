@@ -40,6 +40,14 @@
         background-color: #4C6873;
         color: #F5F6F8;
         text-transform: uppercase;
+        width: 107px;
+        display: flex;
+        align-self: center;
+        margin-top: 20px;
+        &:hover{
+            background-color: #9FB0BF;
+            color: #4C6873;
+        }
     }
 
 }

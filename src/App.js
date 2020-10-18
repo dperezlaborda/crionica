@@ -8,6 +8,7 @@ import Objectives from './sections/Objectives';
 import Achiev from './sections/Achiev';
 import News from './sections/News'
 import Contact from './sections/Contact';
+import Footer from './sections/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Achiev/>
       <News />
       <Contact />
+      <Footer />
     </div>
   );
 }
