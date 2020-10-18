@@ -45,9 +45,10 @@ const Slider = (props) => {
     setActiveIndex(nextIndex);
   }
 
-  const slides = items.map((item) => {
+  const slides = items.map((item, car) => {
     return (
       <CarouselItem
+        key={car}
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
       >

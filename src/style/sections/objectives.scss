@@ -1,27 +1,27 @@
 @import "../common/variables";
 
 .obj-container{
+    align-items: center;
     background-color: #CED7DC;
-    box-shadow: inset 0 0 12px 0 rgba(0, 0, 0, 0.1);
-    margin: 0;
-    padding: 40px 15px;
-    font-family: $txt;
     box-sizing: border-box;
+    box-shadow: inset 0 0 12px 0 rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    font-family: $txt;
+    margin: 0;
+    padding: 40px 15px;
     .obj-title{
+        color: #152126;
         font-size: 30px;
         font-weight: 200;
         margin: 0 0 20px 0;
-        color: #152126;
     }
     .obj-txt{
-        text-align: center;
-        font-size: 15px;
         color:#4C6873;
+        font-size: 15px;
         font-weight: 200;
         margin: 0;
         padding-bottom: 50px;
+        text-align: center;
     }
 }

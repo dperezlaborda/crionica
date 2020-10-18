@@ -1,19 +1,19 @@
 @import "../common/variables";
 
 .about-container{
+    align-items: center;
     background-color: #F5F6F8;
     box-sizing: border-box;
-    font-family: $txt;
-    padding: 40px 15px;
-    align-items: center;
     display: flex;
     flex-direction: column;
+    font-family: $txt;
+    padding: 40px 15px;
     text-align: center;
     .about-title{
+        color: #152126;
         font-size: 30px;
         font-weight: 200;
         margin: 0 0 20px 0;
-        color: #152126;
     }
     .about-sub{
         color: #4C6873;

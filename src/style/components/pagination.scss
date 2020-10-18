@@ -1,0 +1,14 @@
+.pagination{
+    color:#4C6873;
+    .number{
+        cursor: pointer;
+        padding: 20px;
+        &:hover{
+            color:#152126; 
+        }
+    }
+}
+
+.pagination .number:nth-child(n+7){
+    display: none;
+}

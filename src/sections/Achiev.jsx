@@ -33,9 +33,9 @@ const Achiev = () =>{
             <h2 className="title-achiev">Logros</h2>
             <p className="text-achiev">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.</p>
             <div className="card-cntr-achiev">
-                {achs.map( ach => {
+                {achs.map( (ach, index) => {
                     return(
-                        <CardAchiev img={ach.img} date={ach.date} titAch={ach.titAch} txtAch={ach.txtAch}/>
+                        <CardAchiev key={index} img={ach.img} date={ach.date} titAch={ach.titAch} txtAch={ach.txtAch}/>
                     )
                 })}
             </div>

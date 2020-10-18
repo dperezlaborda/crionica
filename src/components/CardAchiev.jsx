@@ -8,7 +8,7 @@ const CardAchiev = ( props ) => {
             <div className="ach-image" style={{
                 backgroundImage: `url(${props.img})`
             }}>
-                <date className="date">{props.date}</date>
+                <p className="date">{props.date}</p>
             </div>
             <div className="ach-txt">
                 <h2 className="ach-tit-card">{props.titAch}</h2>

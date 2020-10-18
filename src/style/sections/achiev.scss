@@ -1,26 +1,26 @@
 @import "../common/variables";
 
 .container-achiev{
+    align-items: center;
     background-color: #E3E8EE;
     box-shadow: inset 0 0 12px 0 rgba(0, 0, 0, 0.1);
-    padding: 60px 15px;
-    font-family: $txt;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    box-sizing: border-box;
+    font-family: $txt;
+    padding: 60px 15px;
     .title-achiev{
+        color: #152126;
         font-size: 30px;
         font-weight: 200;
         margin: 0 0 20px 0;
-        color: #152126;
     }
     .text-achiev{
+        color: #4C6873;
         font-size: 15px;
         font-weight: 200;
         margin: 0;
         padding-bottom: 50px;
-        color: #4C6873;
         text-align: center;
     }
 }

@@ -1,0 +1,11 @@
+@import "../common/variables";
+
+.news-container{
+    background-color: #F5F6F8;
+    font-family: $txt;
+    padding: 30px 20px;
+    .news-title{
+        font-size: 30px;
+        font-weight: 200;
+    }
+}
