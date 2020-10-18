@@ -4,10 +4,15 @@
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    padding: 20px 10px;
+    padding: 25px 10px;
     .card-obj-title{
         font-size: 30px;
         margin-bottom: 15px;
+        text-align: center;
+    }
+    .card-obj-i{
+        font-size: 40px;
+        color: #9FB0BF;
     }
     .card-obj-txt{
         font-size: 16px;
@@ -22,10 +27,10 @@
     }
     .bttn-obj{
         background: none;
-        border: none;
+        border: 2px solid #CED7DC;
         transition:  0.3s ease-in-out;
-        margin-bottom: 20px;
         &:hover{
+            color: #4C6873;
             border-bottom: 2px solid #4C6873;
         }
     }

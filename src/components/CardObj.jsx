@@ -1,12 +1,12 @@
 import React from 'react';
 import '../style/components/cardObj.scss';
 
-const CardObj = () =>{
+const CardObj = ( props ) =>{
     return(
         <div className="card-obj">
-            <h3 className="card-obj-title">Mauris vel neque</h3>
-            <div className="logo-obj"></div>
-            <p className="card-obj-txt">Etiam pellentesque dolor sed suscipit molestie. Praesent scelerisque aliquet nulla at venenatis. Utae imperdiet risus fermentum a.</p>
+            <h3 className="card-obj-title">{props.title}</h3>
+            <div className="card-obj-i">{props.icon}</div>
+            <p className="card-obj-txt">{props.text}</p>
             <span className="bar"></span>
             <button className="bttn-obj">Leer Más</button>
         </div>

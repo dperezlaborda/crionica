@@ -1,0 +1,41 @@
+.container-cardAch{
+   box-sizing: border-box;
+   height: 500px;
+   max-width: 340px;
+   background-color: #EDEDED;
+   transition: ease-in-out 0.5s;
+   cursor: pointer;
+   margin-bottom: 50px;
+   &:hover{
+       transform: scale(1.1);
+       box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+   }
+   .ach-image{
+       background-position: center;
+       background-size: cover;
+       height: 70%;
+       width: 100%;
+       position: relative;
+       .date{
+           position: absolute;
+           bottom:10px;
+           left: 10px;
+           text-transform: uppercase;
+           background-color: #4c6873c0;
+           padding: 5px;
+           color:#E3E8EE;
+           border-radius: 4px;
+       }
+   }
+   .ach-txt{
+       padding: 20px 20px 0;
+       height: 30%;
+       &:hover{
+           height: 50%;
+       }
+       .ach-tit-card{
+           font-weight: 200;
+           font-size: 30px;
+       }
+   }
+}
