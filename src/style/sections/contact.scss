@@ -1,0 +1,62 @@
+@import "../common/variables";
+
+#contact{
+    background-color: #F5F6F8;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    padding: 40px 15px;
+    font-family: $txt;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    .email{
+        display: flex;
+        justify-content: flex-start;
+        padding-bottom: 20px;
+        .env-icon{
+            font-size: 50px;
+            color: #4C6873;
+            margin-right: 10px;
+        }
+    }
+    form{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+        input{
+            padding: 5px;
+            margin-bottom: 10px;
+            background-color: #F5F6F8;
+            box-shadow: none;
+            border: 1px solid #4C6873;
+            border-radius: 1px;
+        }
+    }
+    .send-bttn{
+        border: 0;
+        border-radius: 2px;
+        padding: 8px 30px;
+        background-color: #4C6873;
+        color: #F5F6F8;
+        text-transform: uppercase;
+    }
+
+}
+
+.email p:nth-child(2){
+    margin: 13px 0 0;
+    font-size: 18px;
+    color: #4C6873;
+    cursor: pointer;
+    &:hover{
+        color: #152126;
+    }
+}
+
+#contact h2:nth-child(1){
+    text-align: center;
+    font-weight: 200;
+    color: #152126;
+    font-size: 30px;
+}
