@@ -1,18 +1,19 @@
-import React from 'react'
+import React from 'react';
+import '../style/sections/footer.scss';
 
 const Footer = () => {
     return (
-        <section>
-            <h2>crionica argentina</h2>
-            <p> Aenean sit amet nunc eu augue fermentum sodales sed et erat.Nulla ultricies eros dui, at pretium neque tempor quis. Nulla aliquet, tellus vel suscipit tristique, lacus odio sagittis diam, non placerat justo ante nec odio. Aenean eleifend ex ac lectus placerat, ut gravida quam consectetur.
+        <section id="footer">
+            <h2 className="footer-title">crionica argentina</h2>
+            <p className="footer-txt"> Sodales sed et erat nulla, at pretium neque tempor quis. Nulla aliquet, tellus vel suscipit tristique, lacus odio sagittis diam, non placerat justo ante nec odio. Aenean eleifend ex ac lectus placerat, ut gravida quam consectetur.
             </p>
-            <ul><h3>links útiles</h3>
-                <li>Inicio</li>
-                <li>Política de Privacidad</li>
-                <li>Términos y condiciones</li>
+            <ul className="list-links"><h3 className="links-title">links útiles</h3>
+                <li className="list-item">Inicio</li>
+                <li className="list-item">Política de Privacidad</li>
+                <li className="list-item">Términos y condiciones</li>
             </ul>
-            <div>
-                <p>© Copyright Wayne Enterprises. All Rights Reserved. Designed by Dolores Perez Laborda</p>
+            <div className="container-rights">
+                <p className="copyright">© Copyright Wayne Enterprises. All Rights Reserved. Designed by Dolores Perez Laborda</p>
             </div>
         </section>
     )
