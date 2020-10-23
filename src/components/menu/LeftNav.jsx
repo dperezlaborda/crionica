@@ -3,6 +3,12 @@ import React, {useState} from 'react';
 import styled from 'styled-components';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import SubMenu from './SubMenu';
+import { NavLink } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 
 const Ul = styled.ul`
   list-style: none;
@@ -12,6 +18,7 @@ const Ul = styled.ul`
   box-sizing:border-box;
   .item {
     padding: 18px 10px;
+    text-decoration:none;
   }
   @media (max-width: 768px) {
     flex-flow: column nowrap;
@@ -48,6 +55,9 @@ const Ul = styled.ul`
       }
     }
   }
+  .selected{
+    color:#4C6873;
+  }
 `;
 
 const LeftNav = ({ open }) =>{
@@ -55,16 +65,18 @@ const LeftNav = ({ open }) =>{
   const [dropdown, setDropdown] = useState(false);
 
     return(
-        <Ul className="list-menu" open={open}>    
-            <li className="item">¿Qué es la Criónica?
+        <Ul className="list-menu" open={open}>
+          <Router>    
+            <NavLink to="/about" exact activeClassName="selected" className="item">¿Qué es la Criónica?
               <button onClick={ () => setDropdown(!dropdown) }>
                 <FontAwesomeIcon icon={faChevronDown}/>
               </button>
               {dropdown && <SubMenu/>}
-            </li>
-            <li className="item">Quienes Somos</li>
-            <li className="item">Noticias</li>
-            <li className="item">Contacto</li>
+            </NavLink>
+            <NavLink to="/intro" exact activeClassName="selected" className="item">Quienes Somos</NavLink>
+            <NavLink to="/news" exact activeClassName="selected" className="item">Noticias</NavLink>
+            <NavLink to="/contact" exact activeClassName="selected" className="item">Contacto</NavLink>
+          </Router>
         </Ul>
     )
 }
