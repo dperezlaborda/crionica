@@ -4,11 +4,6 @@ import styled from 'styled-components';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import SubMenu from './SubMenu';
 import { NavLink } from "react-router-dom";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
 
 const Ul = styled.ul`
   list-style: none;
@@ -65,18 +60,16 @@ const LeftNav = ({ open }) =>{
   const [dropdown, setDropdown] = useState(false);
 
     return(
-        <Ul className="list-menu" open={open}>
-          <Router>    
-            <NavLink to="/about" exact activeClassName="selected" className="item">¿Qué es la Criónica?
+        <Ul className="list-menu" open={open}> 
+            <NavLink to="/intro" exact activeClassName="selected" className="item">¿Qué es la Criónica?
               <button onClick={ () => setDropdown(!dropdown) }>
                 <FontAwesomeIcon icon={faChevronDown}/>
               </button>
               {dropdown && <SubMenu/>}
             </NavLink>
-            <NavLink to="/intro" exact activeClassName="selected" className="item">Quienes Somos</NavLink>
+            <NavLink to="/about" exact activeClassName="selected" className="item">Quienes Somos</NavLink>
             <NavLink to="/news" exact activeClassName="selected" className="item">Noticias</NavLink>
             <NavLink to="/contact" exact activeClassName="selected" className="item">Contacto</NavLink>
-          </Router>
         </Ul>
     )
 }

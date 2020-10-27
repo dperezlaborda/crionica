@@ -1,12 +1,12 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import '../../style/components/subMenu.scss';
 
 const SubMenu = () =>{
     return(
         <ul className="sub-menu">
-            <li className="item">Preguntas frecuentes</li>
-            <li className="item">Objetivos</li>
-            <li className="item">Logros</li>
+            <NavLink to="/objectives" exact activeClassName="selected" className="item">Objetivos</NavLink>
+            <NavLink to="/achievments" exact activeClassName="selected" className="item">Logros</NavLink>
         </ul>
     )
 }
