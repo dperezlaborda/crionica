@@ -5,9 +5,9 @@
     box-sizing: border-box;
     font-family: $txt;
     height: 55px;
+    opacity: 0.8;
     padding: 0 20px;
-    position: relative;
+    position: fixed;
     width: 100%;
     z-index: 1;
 }
-
