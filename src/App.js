@@ -9,36 +9,35 @@ import Achiev from './sections/Achiev';
 import News from './sections/News'
 import Contact from './sections/Contact';
 import { Element } from 'react-scroll';
-import { scroller } from 'react-scroll';
 import Footer from './sections/Footer';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
 
   return (
-    <Router>
       <div className="App">
-        <Navbar />
-        <Home />
-        <Element name="scroll-to-intro">
-          <Intro/>
-        </Element>
-        <Element name="scroll-to-about">
-          <About/>
-        </Element>
-        <Element name="scroll-to-obj">
-          <Objectives />
-        </Element>
-        <Switch>
-          <Route exact path="/news" component={News} />
-          <Route exact path="/achievments" component={Achiev} />
-        </Switch>
+        <Router>
+          <Navbar />
+          <Home />
+          <Element name="scroll-to-intro">
+            <Intro/>
+          </Element>
+          <Element name="scroll-to-about">
+            <About/>
+          </Element>
+          <Element name="scroll-to-obj">
+            <Objectives />
+          </Element>
+            <Switch>
+              <Route exact path="/news" component={News} />
+              <Route exact path="/achievments" component={Achiev} />
+            </Switch>
+        </Router>
         <Element name="scroll-to-contact">
           <Contact />
         </Element>
         <Footer/>
       </div>
-    </Router>
   );
 }
 
