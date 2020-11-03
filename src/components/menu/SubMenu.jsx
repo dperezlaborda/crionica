@@ -5,7 +5,7 @@ import '../../style/components/subMenu.scss';
 const SubMenu = () =>{
     return(
         <ul className="sub-menu">
-            <NavLink to="/objectives" exact activeClassName="selected" className="item">Objetivos</NavLink>
+            <NavLink to="/news" exact activeClassName="selected" className="item">Noticias</NavLink>
             <NavLink to="/achievments" exact activeClassName="selected" className="item">Logros</NavLink>
         </ul>
     )

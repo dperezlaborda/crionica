@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import SubMenu from './SubMenu';
 import { NavLink } from "react-router-dom";
+import { scroller } from 'react-scroll';
+
 
 const Ul = styled.ul`
   list-style: none;
@@ -59,17 +61,40 @@ const LeftNav = ({ open }) =>{
 
   const [dropdown, setDropdown] = useState(false);
 
+  const scrollType = {
+    duration:300,
+    delay:500,
+    smooth:true
+  }
+
+  const scrollToIntro = () =>{
+    scroller.scrollTo("scroll-to-intro", scrollType)
+  }
+
+  const scrollToAbout = () =>{
+    scroller.scrollTo("scroll-to-about", scrollType);
+  }
+
+  const scrollToObj = () =>{
+    scroller.scrollTo("scroll-to-obj", scrollType);
+  }
+
+  const scrollToContact = () =>{
+    scroller.scrollTo("scroll-to-contact", scrollType);
+  }
+
+
     return(
         <Ul className="list-menu" open={open}> 
-            <NavLink to="/intro" exact activeClassName="selected" className="item">¿Qué es la Criónica?
+            <NavLink to="/intro" exact activeClassName="selected" className="item" onClick={() => scrollToIntro()}>¿Qué es la Criónica?
               <button onClick={ () => setDropdown(!dropdown) }>
                 <FontAwesomeIcon icon={faChevronDown}/>
               </button>
               {dropdown && <SubMenu/>}
             </NavLink>
-            <NavLink to="/about" exact activeClassName="selected" className="item">Quienes Somos</NavLink>
-            <NavLink to="/news" exact activeClassName="selected" className="item">Noticias</NavLink>
-            <NavLink to="/contact" exact activeClassName="selected" className="item">Contacto</NavLink>
+            <NavLink to="/about" exact activeClassName="selected" className="item" onClick={()=>scrollToAbout()}>Quienes Somos</NavLink>
+            <NavLink to="/news" exact activeClassName="selected" className="item" onClick={()=> scrollToObj()}>Objetivos</NavLink>
+            <NavLink to="/contact" exact activeClassName="selected" className="item" onClick={() =>scrollToContact()}>Contacto</NavLink>
         </Ul>
     )
 }

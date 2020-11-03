@@ -1,5 +1,6 @@
 import React from 'react';
 import '../style/sections/footer.scss';
+import ScrollToTop from '../components/ScrollToTop';
 
 const Footer = () => {
     return (
@@ -15,6 +16,7 @@ const Footer = () => {
             <div className="container-rights">
                 <p className="copyright">© Copyright Wayne Enterprises. All Rights Reserved. Designed by Dolores Perez Laborda</p>
             </div>
+            <ScrollToTop />
         </section>
     )
 }
